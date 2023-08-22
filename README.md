@@ -10,6 +10,7 @@
 * **SQL Ödev 3** : *LIKE ve ILIKE*
 * **SQL Ödev 4** : *DISTINCT ve COUNT*
 * **SQL Ödev 5** : *ORDER BY & LIMIT ve OFFSET*
+* **SQL Ödev 6** : *AGGREGATE Fonksiyonlar*
 
 
 ## SQL Ödev 1 | *WHERE ve Mantıksal Operatörler* - *Soru ve cevapları*
@@ -140,7 +141,7 @@ WHERE city ILIKE '%r';
 
 ## SQL Ödev 5 | *ORDER BY & LIMIT ve OFFSET* - *Soru ve cevapları* 
 
-1. film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
+1. **film** tablosunda bulunan ve film ismi (**title**) *'n'* karakteri ile biten en uzun (**length**) *5* filmi *sıralayınız*.
 
 ```
 SELECT * FROM film
@@ -149,7 +150,7 @@ ORDER BY length DESC
 LIMIT 5;
 ```
 
-2. film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci(6,7,8,9,10) 5 filmi(6,7,8,9,10) sıralayınız.
+2. **film** tablosunda bulunan ve film ismi (**title**) *'n'* karakteri ile biten en kısa (**length**) ikinci(6,7,8,9,10) 5 filmi(6,7,8,9,10) *sıralayınız*.
 
 
 ```
@@ -160,7 +161,7 @@ OFFSET 5
 LIMIT 5;
 ```
 
-3. customer tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.
+3. **customer** tablosunda bulunan **last_name** sütununa göre azalan yapılan sıralamada **store_id** *1* olmak koşuluyla *ilk 4* veriyi *sıralayınız*.
 
 
 ```
@@ -168,4 +169,33 @@ SELECT * FROM customer
 WHERE store_id = '1' 
 ORDER BY last_name DESC
 LIMIT 4;
+```
+
+## SQL Ödev 6 | *AGGREGATE Fonksiyonlar* - *Soru ve cevapları*
+
+1. **film** tablosunda bulunan **rental_rate** sütunundaki değerlerin *ortalaması* *nedir?*
+
+```
+SELECT ROUND(AVG(rental_rate),2) FROM film;
+```
+
+2. **film** tablosunda bulunan filmlerden *kaç tanesi* *'C'* karakteri ile *başlar?*
+
+```
+SELECT COUNT(title) FROM film 
+WHERE title LIKE 'C%';
+```
+
+3. **film** tablosunda bulunan filmlerden **rental_rate** değeri *0.99* a eşit olan en uzun (**length**) film *kaç dakikadır?*
+
+```
+SELECT MAX(length) FROM film
+WHERE rental_rate = 0.99;
+```
+
+4. **film** tablosunda bulunan filmlerin **uzunluğu** *150* dakikadan büyük olanlarına ait kaç farklı **replacement_cost** değeri *vardır?*
+
+```
+SELECT COUNT(DISTINCT replacement_cost ) FROM film
+WHERE length > 150;
 ```
