@@ -5,14 +5,14 @@
 >Bu repo'da sadece 1 adet README dosyası vardır.
 ## Ödev Listesi
 >ödevler eklenmeye devam edecektir.
-* **SQL Ödev 1** : *WHERE ve Mantıksal Operatörler*
-* **SQL Ödev 2** : *BETWEEN ve IN*
-* **SQL Ödev 3** : *LIKE ve ILIKE*
-* **SQL Ödev 4** : *DISTINCT ve COUNT*
-* **SQL Ödev 5** : *ORDER BY & LIMIT ve OFFSET*
-* **SQL Ödev 6** : *AGGREGATE Fonksiyonlar*
-* **SQL Ödev 7** : *GROUP BY & HAVING*
-* **SQL Ödev 8** : *Tablo Oluşturmak - Verileri Güncellemek - Silmek*
+* **[SQL Ödev 1](#sql-ödev-1--where-ve-mantıksal-operatörler---soru-ve-cevapları)** : *WHERE ve Mantıksal Operatörler*
+* **[SQL Ödev 2](#sql-ödev-2--between-ve-in---soru-ve-cevapları)** : *BETWEEN ve IN*
+* **[SQL Ödev 3](#sql-ödev-3--like-ve-ilike---soru-ve-cevapları)** : *LIKE ve ILIKE*
+* **[SQL Ödev 4](#sql-ödev-4--distinct-ve-count---soru-ve-cevapları)** : *DISTINCT ve COUNT*
+* **[SQL Ödev 5](#sql-ödev-5--order-by--limit-ve-offset---soru-ve-cevapları)** : *ORDER BY & LIMIT ve OFFSET*
+* **[SQL Ödev 6](#sql-ödev-6--aggregate-fonksiyonlar---soru-ve-cevapları)** : *AGGREGATE Fonksiyonlar*
+* **[SQL Ödev 7](#sql-ödev-7--group-by--having---soru-ve-cevapları)** : *GROUP BY & HAVING*
+* **[SQL Ödev 8](#sql-ödev-8--tablo-oluşturmak--verileri-güncellemek--silmek---soru-ve-cevapları)** : *Tablo Oluşturmak - Verileri Güncellemek - Silmek*
 
 
 ## SQL Ödev 1 | *WHERE ve Mantıksal Operatörler* - *Soru ve cevapları*
@@ -236,7 +236,7 @@ ORDER BY country_id DESC
 LIMIT 1;
 ```
 
-## SQL Ödev 8 | *Tablo Oluşturmak - Verileri Güncellemek - Silmek* - *Soru ve cevapları*
+## SQL Ödev 8 | *Tablo Oluşturmak / Verileri Güncellemek / Silmek* - *Soru ve cevapları*
 
 1. **test** veritabanınızda **employee** isimli sütun bilgileri *id(INTEGER)*, *name VARCHAR(50)*, *birthday DATE*, *email VARCHAR(100)* olan bir tablo *oluşturalım.*
 
